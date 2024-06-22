@@ -21,22 +21,22 @@ async function checkWeather(){
     document.querySelector(".weather-note").innerHTML = data.weather[0].main ;
 
     if(description == "Clouds"){
-        document.querySelector(".weather-icon").src="Weather-icons/cloud.png";
+        document.querySelector(".weather-icon").src="cloud.png";
     }
     else if(description == "Clear"){
-        document.querySelector(".weather-icon").src="Weather-icons/day-and-night.png";
+        document.querySelector(".weather-icon").src="day-and-night.png";
     }
     else if(description == "Rain"){
-        document.querySelector(".weather-icon").src="Weather-icons/rain.png";
+        document.querySelector(".weather-icon").src="rain.png";
     }
     else if(description == "Snow"){
-        document.querySelector(".weather-icon").src="Weather-icons/snow.png";
+        document.querySelector(".weather-icon").src="snow.png";
     }
     else if(description== "Haze"){
-        document.querySelector(".weather-icon").src="Weather-icons/haze.png"
+        document.querySelector(".weather-icon").src="haze.png"
     }
     else if(description== "Mist"){
-        document.querySelector(".weather-icon").src="Weather-icons/mist.png"
+        document.querySelector(".weather-icon").src="mist.png"
     }
 }
 checkWeather();
